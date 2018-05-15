@@ -8,19 +8,11 @@ The app will be looking for an .env file with the sendgrid api key.
 In the root directory `touch .env`
 
 
-
 ## How to Run it
 
 Clone the repo
 
-
-`cd server`
-
 `npm install`
-
-`nodemon.js`
-
-`cd ..`
 
 `cd react-ui`
 
@@ -29,3 +21,15 @@ Clone the repo
 `npm run build`
 
 `npm start`
+
+`cd ..`
+
+`cd server`
+
+`npm install`
+
+`node app.js`
+
+Go to `http://localhost:3000/`
+
+
