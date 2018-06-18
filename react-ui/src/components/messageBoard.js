@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-
+import {
+    Container
+  } from 'semantic-ui-react';
 
 class MessageSend extends Component {
 	constructor(props) {
@@ -44,9 +46,9 @@ class MessageSend extends Component {
 
 	render() {
         return(
-            <div>
-                 <form className="form-group" onSubmit={this.handleSubmit}>
-                    <div className="form-group">
+            <Container>
+                 <form className="ui form" onSubmit={this.handleSubmit}>
+                    <div className="field">
                         <input
                             name="recipient"
                             className="form-control"
@@ -56,7 +58,7 @@ class MessageSend extends Component {
                             placeholder="Enter the email of who you want to send your message to"
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="field">
                         <textarea
                             name="message"
                             className="form-control"
@@ -66,12 +68,13 @@ class MessageSend extends Component {
                         />
                     </div>
                     <button
-                        className="btn btn-primary"
+                        className="ui button" 
+                        role="button"
                         type="submit">
                         Send Message
                     </button>
                 </form>
-            </div>
+            </Container>
         )
 	}
 }

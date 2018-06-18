@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
+import {
+    Container
+  } from 'semantic-ui-react';
 
 
 class MessageLog extends Component {
@@ -9,25 +12,30 @@ class MessageLog extends Component {
         this.state = {
             messages: [],
         };
-
-	}
-
+        
+    }
+    
+    
     componentDidMount() {
         fetch('/messages')
-            .then(res => res.json())
-            .then(messages => this.setState({ messages: messages }));
-}
-
-
+        .then(res => res.json())
+        .then(messages => this.setState({ messages: messages }));
+    }
+    
+    
 	render() {
         return (
-        <div className="guestdataContainer">
-            <h6>Message Log</h6>
-            
-            {this.state.messages.map(message =>
-                <div key={message._id}>{message.message} - FROM:{message.recipient}</div>
-              )}
-        </div>
+        <Container>
+            <h1 className="">Message Log</h1>
+            <div role="list" >
+                {this.state.messages.map(message =>
+                    <div className="ui celled list">
+                        <div className="item" key={message._id}>{message.message}</div>
+                        <div className="header">{message.recipient}</div>
+                    </div>
+                )}
+            </div>
+        </Container>
 
         )
 	}

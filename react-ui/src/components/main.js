@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import MessageBoard from '../components/messageBoard';
-import MessageLog from '../components/messageLog'
+import MessageLog from '../components/messageLog';
 
 const Main = () => (
   <main>
