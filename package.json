@@ -6,9 +6,9 @@
     "node": "8.9.4"
   },
   "scripts": {
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start": "concurrently --kill-others-on-fail \"yarn run server\" \"yarn run client\"",
     "server": "cd server && nodemon app.js",
-    "client": "cd react-ui && npm run start"
+    "client": "cd react-ui && yarn start"
   },
   "cacheDirectories": [
     "node_modules",
