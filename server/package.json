@@ -15,6 +15,9 @@
     "mandrill-api": "^1.0.45",
     "mongoose": "^5.1.0"
   },
+  "scripts": {
+    "start": "node app.js"
+  },
   "engines": {
     "node": "v8.9.4"
   }
