@@ -16,5 +16,5 @@ mongoose.connect(config.getDbConnectionString());
 // setupController(app);
 apiController(app);
 
-// app.listen(port);
+app.listen(port);
 
