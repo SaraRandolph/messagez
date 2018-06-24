@@ -6,7 +6,7 @@ var config = require('./config');
 var setupController = require('./controllers/setupController');
 var apiController = require('./controllers/apiController');
 
-var port = process.env.PORT || 3005;
+const port = process.env.PORT || 3005;
 
 app.use('/', express.static(__dirname + '/public'));
 
