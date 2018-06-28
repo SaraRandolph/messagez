@@ -6,7 +6,7 @@
     "node": "8.9.4"
   },
   "scripts": {
-    "start": "concurrently --kill-others-on-fail \"yarn run server\" \"yarn run client\"",
+    "start": "concurrently --kill-others-on-fail \"killall node\"  \"yarn run server\" \"yarn run client\"",
     "server": "cd server && yarn start",
     "client": "cd react-ui && yarn start"
   },
