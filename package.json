@@ -10,7 +10,6 @@
     "server": "cd server && yarn start",
     "client": "cd react-ui && yarn start"
   },
-  "license": "UNLICENSED" ,
   "cacheDirectories": [
     "node_modules",
     "react-ui/node_modules"
